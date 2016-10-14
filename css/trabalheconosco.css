@@ -1,0 +1,16 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
+.trabalheconosco {
+  background-color: yellow;
+  height: 980px;
+  width: 100%;
+}
