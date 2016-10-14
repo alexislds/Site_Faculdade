@@ -2,6 +2,35 @@
 
 .quemsomos{
   background-color:purple; height:980px; width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;   
+  flex-direction: column;
+    
+    
+    &-titulo-principal{font-size:40px; text-transform: uppercase;}
+    
+    &-imagens{background-color:aqua; width:1000px; height:500px;margin-bottom: 100px;}
+    
+    &-imagens-lista{display: flex;  flex-direction: row; justify-content:space-around; width: 1000px; height: 200px; background-color: brown;}
+     
+    &-item:nth-of-type(1){background-image:url("../img/alexis.jpg");  background-repeat: no-repeat; width: 130px; height: 130px;}
+    
+    &-item:nth-of-type(2){background-image:url("../img/lucas.jpg"); background-repeat: no-repeat; width: 130px; height: 130px;}
+    
+    &-item:nth-of-type(3){background-image:url("../img/vinicius.jpg"); background-repeat: no-repeat; width: 130px; height: 130px;}
+    
+   
+    &-item:nth-of-type(4){background-image:url("../img/igor.jpg"); background-repeat: no-repeat; width: 130px; height: 130px;}
+    
+    &-item-todos{border-radius: 50%; transition: all 1s;}
+    
+    &-item-todos:hover{transform: scale(1.5)}
+    
+    &-textos-titulo1{color: white; text-align: center; font-size: 30px; margin-bottom: 30px; }
+    
+    &-textos-p1{text-align: center;}
+    
 
   @include smartphone-tablet {
 
