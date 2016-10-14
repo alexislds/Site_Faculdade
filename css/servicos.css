@@ -22,6 +22,27 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.servicos-titulo-principal {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.servicos-container-plano {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .servicos-plano {
@@ -57,4 +78,8 @@ img {
   margin-top: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
+  background: url("../img/check.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px 18px;
 }
