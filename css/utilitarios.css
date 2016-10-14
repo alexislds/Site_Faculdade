@@ -1,0 +1,10 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}

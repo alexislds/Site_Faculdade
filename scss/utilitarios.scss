@@ -1,0 +1,73 @@
+
+/* Variaveis */
+
+$corA: #02111b;
+$corB: #fff;
+$corC: #082f4d;
+$smartphone-width:480px;
+$tablet-width:768px;
+$monitor-width:1280px;
+$ultrawide-width:1920px;
+
+
+
+/* Mixins */
+
+@mixin mascara {
+  display:inline-block; height:100%; width:100%;
+}
+
+@mixin efeitoCrescer {
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 1); transform: scale(1.2);
+}
+
+
+
+/* Media Querys */
+
+@mixin smartphone-tablet {
+  @media (max-width: #{$monitor-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin monitor-ultrawide {
+  @media (min-width: #{$monitor-width}) {
+    @content;
+  }
+}
+
+@mixin smartphone {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$monitor-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin monitor {
+  @media (min-width: #{$monitor-width}) and (max-width: #{$ultrawide-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin ultrawide {
+  @media (min-width: #{$ultrawide-width}) {
+    @content;
+  }
+}
+
+
+
+/* Placeholder */
+
+
+
+
+/* Configs fixas */
+
+img {height:auto !important; max-width:100%; width:auto;}

@@ -1,3 +1,14 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
 body {
   background-color: blue;
   height: 3000px;
