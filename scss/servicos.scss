@@ -5,16 +5,29 @@
     background-color: red;
     height:  980px;
     width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    
+    &-plano{width:300px; height:500px; background-color:white; text-align:center; padding:20px; border-radius:10px; transition: background-color 1s, transform 1s; border: 1px solid rgba(black,0.5); }
+    
+    &-plano:hover{background-color:darkorange; transform: scale(1.1); color:white;}
+    
+    &-titulo{font-size:30px;}
+    
+    &-listas{margin-top:30px;}
     
     
+    &-basico{  }
+        
+    &-premium{  }
+      
+    &-vip{ }
+  
+    &-item{margin-top: 30px; border-bottom: 1px solid rgba(black,0.1); padding-bottom: 10px;}    
     
-    &-basico{
-        width: 100px;
-        height: 100px;
-        background-color:aqua;
-    }
-    
-    
+  
     
 
    @include smartphone-tablet {
