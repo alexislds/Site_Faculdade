@@ -64,6 +64,74 @@ img {
   width: auto;
 }
 
+.home {
+  background-color: green;
+  height: 980px;
+  width: 100%;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
+.quemsomos {
+  background-color: purple;
+  height: 980px;
+  width: 100%;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
+.contato {
+  background-color: blue;
+  height: 980px;
+  width: 100%;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
+.trabalheconosco {
+  background-color: yellow;
+  height: 980px;
+  width: 100%;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
 body {
   background-color: blue;
   height: 3000px;

@@ -1,0 +1,25 @@
+@import 'utilitarios';
+
+.home{
+  background-color:green; height:980px; width:100%;
+
+  @include smartphone-tablet {
+
+  }
+
+  @include smartphone {
+
+  }
+
+  @include tablet {
+
+  }
+
+  @include monitor-ultrawide {
+
+  }
+
+  @include monitor {
+
+  }
+}
