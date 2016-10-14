@@ -1,0 +1,35 @@
+@import 'utilitarios';
+
+
+.servicos{
+    background-color: red;
+    height:  980px;
+    width: 100%;
+    
+    
+    
+    
+    
+    
+    
+    /* Mixins */
+   @include smartphone-tablet {
+  
+  }
+
+  @include smartphone {
+   
+  }
+
+  @include tablet {
+  
+  }
+
+  @include monitor-ultrawide {
+ 
+
+    }
+  @include monitor {
+  
+  }
+}
