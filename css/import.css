@@ -64,17 +64,33 @@ img {
   width: auto;
 }
 
-<<<<<<< HEAD
-.servicos {
-  background-color: red;
-  height: 980px;
-  width: 100%;
-  /* Mixins */
-=======
 .home {
   background-color: green;
   height: 980px;
   width: 100%;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Placeholder */
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
+.servicos {
+  background-color: red;
+  height: 980px;
+  width: 100%;
+}
+
+.servicos-basico {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
 }
 
 /* Variaveis */
@@ -126,7 +142,6 @@ img {
   background-color: yellow;
   height: 980px;
   width: 100%;
->>>>>>> origin/master
 }
 
 /* Variaveis */

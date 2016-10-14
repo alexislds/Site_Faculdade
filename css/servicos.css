@@ -13,5 +13,10 @@ img {
   background-color: red;
   height: 980px;
   width: 100%;
-  /* Mixins */
+}
+
+.servicos-basico {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
 }
