@@ -179,6 +179,7 @@ img {
 
 .quemsomos {
   background-color: purple;
+  color: white;
   height: 980px;
   width: 100%;
   display: -webkit-box;
@@ -187,12 +188,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 .quemsomos-titulo-principal {
@@ -200,76 +203,105 @@ img {
   text-transform: uppercase;
 }
 
-.quemsomos-imagens {
-  background-color: aqua;
+.quemsomos-container {
   width: 1000px;
   height: 500px;
-  margin-bottom: 100px;
 }
 
-.quemsomos-imagens-lista {
+.quemsomos-lista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 30px;
+  padding: 20px;
   width: 1000px;
-  height: 200px;
-  background-color: brown;
 }
 
-.quemsomos-item:nth-of-type(1) {
-  background-image: url("../img/alexis.jpg");
-  background-repeat: no-repeat;
-  width: 130px;
-  height: 130px;
-}
-
-.quemsomos-item:nth-of-type(2) {
-  background-image: url("../img/lucas.jpg");
-  background-repeat: no-repeat;
-  width: 130px;
-  height: 130px;
-}
-
-.quemsomos-item:nth-of-type(3) {
-  background-image: url("../img/vinicius.jpg");
-  background-repeat: no-repeat;
-  width: 130px;
-  height: 130px;
-}
-
-.quemsomos-item:nth-of-type(4) {
-  background-image: url("../img/igor.jpg");
-  background-repeat: no-repeat;
-  width: 130px;
-  height: 130px;
-}
-
-.quemsomos-item-todos {
+.quemsomos-item {
   border-radius: 50%;
   -webkit-transition: all 1s;
   transition: all 1s;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 130px;
 }
 
-.quemsomos-item-todos:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+.quemsomos-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-.quemsomos-textos-titulo1 {
+.quemsomos-alexis {
+  background-image: url("../img/alexis.jpg");
+}
+
+.quemsomos-lucas {
+  background-image: url("../img/lucas.jpg");
+}
+
+.quemsomos-vinicius {
+  background-image: url("../img/vinicius.jpg");
+}
+
+.quemsomos-igor {
+  background-image: url("../img/igor.jpg");
+}
+
+.quemsomos-caciano {
+  background-image: url("../img/caciano.jpg");
+}
+
+.quemsomos-informacoes {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.quemsomos-informacoes-titulo {
   color: white;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 30px;
 }
 
-.quemsomos-textos-p1 {
+.quemsomos-informacoes-texto {
+  padding: 20px;
   text-align: center;
+}
+
+.quemsomos-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.quemsomos-social-item {
+  background: no-repeat;
+  display: inline-block;
+  height: 50px;
+  list-style: none;
+  width: 50px;
+}
+
+.quemsomos-link {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.quemsomos-facebook {
+  background-image: url(../img/facebook.png);
+  margin-right: 20px;
+}
+
+.quemsomos-github {
+  background-image: url(../img/github.png);
 }
 
 /* Variaveis */
