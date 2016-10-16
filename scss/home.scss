@@ -23,3 +23,9 @@
 
   }
 }
+@keyframes pulsar {
+    0% {background-position:center bottom;}
+    50% {background-position:center top;}
+    100% {background-position:center bottom;}
+}
+.btn-servicos{background:url(../img/setinha.png); background-repeat:no-repeat; background-size:50% auto; height:100px; width:200px; position:absolute; left:50%; margin-left:-100px; bottom:0; transition:all 500ms; animation:pulsar 5s infinite;}

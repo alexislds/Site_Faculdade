@@ -1,4 +1,5 @@
 @import 'utilitarios';
 
 body{background-color:red; height:3000px; width:100%; font-family: $fontePadrao;}
-   
+
+.link{@include mascara;}

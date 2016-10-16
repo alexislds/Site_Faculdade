@@ -70,6 +70,46 @@ img {
   width: 100%;
 }
 
+@-webkit-keyframes pulsar {
+  0% {
+    background-position: center bottom;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    background-position: center bottom;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.btn-servicos {
+  background: url(../img/setinha.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -webkit-animation: pulsar 5s infinite;
+          animation: pulsar 5s infinite;
+}
+
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
@@ -538,4 +578,10 @@ body {
   height: 3000px;
   width: 100%;
   font-family: "Lato", sans-serif;
+}
+
+.link {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
