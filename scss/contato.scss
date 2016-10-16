@@ -1,7 +1,60 @@
 @import 'utilitarios';
 
 .contato{
-  background-color:blue; height:980px; width:100%;
+  display:flex; justify-content:center; align-items:center; height:980px; padding:20px 80px; width:100%;
+
+  &-informacoes{display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center; align-items:center; height:100%; padding:20px; width:50%;}
+  &-infos{
+    height:40%; padding:30px 20px; text-align:center; width:50%;
+
+    &-tt{font-size:24px; font-weight:bold;}
+    &-subtt{font-size:18px; font-weight:bold;}
+    &-linha{margin-top:20px;}
+  }
+  &-social{
+    height:40%; padding:30px 20px; text-align:center; width:50%;
+
+    &-tt{font-size:24px; font-weight:bold;}
+
+    &-lista{margin-top:20px;}
+
+    &-item{background-repeat:no-repeat; background-position:center; background-size:40px 40px; display:inline-block; height:40px; margin-right:10px; width:40px;}
+
+    &-link{@include mascara; background:rgba(black, .2); transition:all 500ms;}
+    &-link:hover{background:none;}
+
+    &-facebook{background-image:url(../img/contato-facebook.png);}
+    &-instagram{background-image:url(../img/contato-insta.png);}
+    &-linkedin{background-image:url(../img/contato-linkedin.png);}
+    &-twitter{background-image:url(../img/contato-twitter.png);}
+
+  }
+  &-localizacao{
+    height:60%; margin-top:65px; width:100%;
+
+    &-tt{font-size:24px; font-weight:bold; text-align:center;}
+    &-mapa{margin-top:20px;}
+  }
+
+  &-formulario{
+    height:100%; padding:20px; width:50%;
+
+    &-container{display:flex; flex-direction:column; height:100%; padding:10px; width:100%;}
+
+    &-campo                    {font-family:$fontePadrao; text-align:center; max-width:99.5%; width:99.3%;}
+    &-campo:not(:first-of-type){margin-top:10px;}
+
+    &-nome,
+    &-email,
+    &-assunto{height:3%;}
+
+    &-texto{height:30%; max-height:80%; margin-top:10px;}
+
+    &-btn      {background-color:#00C851; border:1px solid #007E33; color:white; margin-top:7px; padding:10px; width:100%; text-transform:uppercase;}
+    &-btn:hover{background-color:#007E33;}
+  }
+
+
 
   @include smartphone-tablet {
 
