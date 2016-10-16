@@ -13,4 +13,69 @@ img {
   background-color: yellow;
   height: 980px;
   width: 100%;
+  overflow: hidden;
+}
+
+.trabalheconosco-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px 20%;
+}
+
+.trabalheconosco-titulo-principal {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.trabalheconosco-informacoes {
+  width: 100%;
+  height: 200px;
+  margin-top: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trabalheconosco-informacoes-lampada {
+  background: url(../img/lampada.png) no-repeat right center/130px 130px;
+  padding-right: 130px;
+}
+
+.trabalheconosco-informacoes-logo1 {
+  background: url(../img/logo1.png) no-repeat left center/130px 130px;
+  padding-left: 150px;
+}
+
+.trabalheconosco-informacoes-clima {
+  background: url(../img/clima.png) no-repeat left center/130px 130px;
+  padding-left: 130px;
+}
+
+.trabalheconosco-informacoes-engrenagem {
+  background: url(../img/engrenagem.png) no-repeat right center/130px 130px;
+  padding-right: 130px;
+}
+
+.trabalheconosco-informacoes-titulo {
+  font-size: 29px;
+  margin-bottom: 25px;
 }
