@@ -434,7 +434,7 @@ img {
 
 .contato-localizacao {
   height: 60%;
-  margin-top: 65px;
+  margin-top: 25px;
   width: 100%;
 }
 
@@ -445,7 +445,10 @@ img {
 }
 
 .contato-localizacao-mapa {
+  background: url(../img/localidade.jpg) no-repeat center/cover;
+  height: 90%;
   margin-top: 20px;
+  width: 100%;
 }
 
 .contato-formulario {

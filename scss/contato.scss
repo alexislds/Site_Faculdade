@@ -30,10 +30,10 @@
 
   }
   &-localizacao{
-    height:60%; margin-top:65px; width:100%;
+    height:60%; margin-top:25px; width:100%;
 
     &-tt{font-size:24px; font-weight:bold; text-align:center;}
-    &-mapa{margin-top:20px;}
+    &-mapa{background:url(../img/localidade.jpg) no-repeat center / cover; height:90%; margin-top:20px; width:100%;}
   }
 
   &-formulario{
