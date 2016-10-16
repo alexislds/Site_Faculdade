@@ -1,5 +1,5 @@
 @import 'utilitarios';
-
-body{background-color:red; height:3000px; width:100%; font-family: $fontePadrao;}
+html{height:100%; width:100%;}
+body{background-color:red; height:100%; width:100%; font-family: $fontePadrao; position:relative;}
 
 .link{@include mascara;}

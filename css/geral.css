@@ -9,11 +9,17 @@ img {
   width: auto;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-color: red;
-  height: 3000px;
+  height: 100%;
   width: 100%;
   font-family: "Lato", sans-serif;
+  position: relative;
 }
 
 .link {

@@ -10,8 +10,10 @@ img {
 }
 
 .trabalheconosco {
+  position: absolute;
+  top: 300%;
   background-color: yellow;
-  height: 980px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }

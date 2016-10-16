@@ -10,9 +10,11 @@ img {
 }
 
 .quemsomos {
+  position: absolute;
+  top: 200%;
   background-color: purple;
   color: white;
-  height: 980px;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,7 +1,7 @@
 @import 'utilitarios';
 
 .contato{
-  display:flex; justify-content:center; align-items:center; height:980px; padding:20px 80px; width:100%;
+  position:absolute; top:400%; display:flex; justify-content:center; align-items:center; height:100%; padding:20px 80px; width:100%;
 
   &-informacoes{display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center; align-items:center; height:100%; padding:20px; width:50%;}
   &-infos{

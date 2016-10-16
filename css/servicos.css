@@ -10,8 +10,10 @@ img {
 }
 
 .servicos {
+  position: absolute;
+  top: 100%;
   background-color: red;
-  height: 980px;
+  height: 100%;
   width: 100%;
   padding: 20px;
   display: -webkit-box;
