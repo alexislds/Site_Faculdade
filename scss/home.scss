@@ -1,10 +1,10 @@
 @import 'utilitarios';
 
 .home{
-  background-color:green; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px; height:100%; width:100%; position:absolute;
+  background-color:green; @extend %flexcoluna; padding:20px; height:100%; width:100%; position:absolute;
 
   &-menu{
-    background-color:red; display:flex; justify-content:center; align-items:center; flex-grow:1; width:100%; text-align:center;
+    background-color:red; @extend %flexlinha; flex-grow:1; width:100%; text-align:center;
 
     &-lista{}
     &-item{display:inline-block; list-style:none;}
@@ -12,7 +12,7 @@
   }
 
   &-meio{
-    background-color:blue; display:flex; flex-direction:column; justify-content:center; align-items:center; flex-grow:12; width:100%; text-align:center;
+    background-color:blue; @extend %flexcoluna; flex-grow:12; width:100%; text-align:center;
 
 
   }
@@ -42,4 +42,4 @@
     50% {background-position:center top;}
     100% {background-position:center bottom;}
 }
-.btn-servicos{background:url(../img/setinha.png); background-repeat:no-repeat; background-size:50% auto; height:100px; width:200px; position:absolute; left:50%; margin-left:-100px; bottom:0; transition:all 500ms; animation:pulsar 5s infinite;}
+.btn-servicos{background:url(../img/setinha.png); background-repeat:no-repeat; background-size:50% auto; height:100px; width:200px; position:absolute; left:50%; margin-left:-100px; bottom:0; animation:pulsar 3s infinite;}

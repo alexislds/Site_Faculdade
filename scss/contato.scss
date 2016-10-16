@@ -1,9 +1,9 @@
 @import 'utilitarios';
 
 .contato{
-  position:absolute; top:400%; display:flex; justify-content:center; align-items:center; height:100%; padding:20px 80px; width:100%;
+  @extend %flexlinha; position:absolute; top:400%; height:100%; padding:20px; width:100%;
 
-  &-informacoes{display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center; align-items:center; height:100%; padding:20px; width:50%;}
+  &-informacoes{@extend %flexlinha; flex-wrap:wrap; height:100%; padding:20px; width:50%;}
   &-infos{
     height:40%; padding:30px 20px; text-align:center; width:50%;
 
@@ -39,16 +39,16 @@
   &-formulario{
     height:100%; padding:20px; width:50%;
 
-    &-container{display:flex; flex-direction:column; height:100%; padding:10px; width:100%;}
+    &-container{@extend %flexcoluna; height:100%; padding:10px; width:100%;}
 
-    &-campo                    {font-family:$fontePadrao; text-align:center; max-width:99.5%; width:99.3%;}
+    &-campo                    {font-family:$fontePadrao; text-align:center; max-width:100%; width:100%;}
     &-campo:not(:first-of-type){margin-top:10px;}
 
     &-nome,
     &-email,
     &-assunto{height:3%;}
 
-    &-texto{height:30%; max-height:80%; margin-top:10px;}
+    &-texto{height:30%; max-height:100%; margin-top:10px;}
 
     &-btn      {background-color:#00C851; border:1px solid #007E33; color:white; margin-top:7px; padding:10px; width:100%; text-transform:uppercase;}
     &-btn:hover{background-color:#007E33;}

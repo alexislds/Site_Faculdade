@@ -2,15 +2,23 @@
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-/* Configs fixas */
-img {
-  height: auto !important;
-  max-width: 100%;
-  width: auto;
+.home-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.home {
-  background-color: green;
+.home, .home-meio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +32,17 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/* Configs fixas */
+img {
+  height: auto !important;
+  max-width: 100%;
+  width: auto;
+}
+
+.home {
+  background-color: green;
   padding: 20px;
   height: 100%;
   width: 100%;
@@ -32,15 +51,6 @@ img {
 
 .home-menu {
   background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -60,19 +70,6 @@ img {
 
 .home-meio {
   background-color: blue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-flex: 12;
       -ms-flex-positive: 12;
           flex-grow: 12;
@@ -114,8 +111,6 @@ img {
   left: 50%;
   margin-left: -100px;
   bottom: 0;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-  -webkit-animation: pulsar 5s infinite;
-          animation: pulsar 5s infinite;
+  -webkit-animation: pulsar 3s infinite;
+          animation: pulsar 3s infinite;
 }
