@@ -7,8 +7,10 @@
     &-titulo-principal{font-size:40px; text-transform:uppercase;}
     &-titulo{font-size:30px;}
 
-    &-container-plano{display:flex; justify-content:space-around;align-items:center; width:100%;}
+    &-container-plano{display:flex; justify-content:center; align-items:center; width:100%;}
+
     &-plano          {width:300px; height:500px; background-color:white; text-align:center; padding:20px; border-radius:10px; transition: background-color 1s, transform 1s; border:1px solid rgba(black,0.5); }
+    &-plano:not(:last-of-type){margin-right:40px;}
     &-plano:hover    {background-color:darkorange; transform: scale(1.1); color:white;}
 
     &-listas{margin-top:30px;}

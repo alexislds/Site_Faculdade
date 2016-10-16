@@ -46,7 +46,7 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 20px;
   width: 1000px;
 }
