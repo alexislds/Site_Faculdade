@@ -1,7 +1,21 @@
 @import 'utilitarios';
 
 .home{
-  background-color:green; height:980px; width:100%;
+  background-color:green; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px; height:980px; width:100%;
+
+  &-menu{
+    background-color:red; display:flex; justify-content:center; align-items:center; flex-grow:1; width:100%; text-align:center;
+
+    &-lista{}
+    &-item{display:inline-block; list-style:none;}
+    &-link{text-decoration:none; padding:10px 20px;}
+  }
+
+  &-meio{
+    background-color:blue; display:flex; flex-direction:column; justify-content:center; align-items:center; flex-grow:12; width:100%; text-align:center;
+
+
+  }
 
   @include smartphone-tablet {
 
