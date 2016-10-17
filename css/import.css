@@ -73,7 +73,7 @@ table {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,15 +127,13 @@ img {
 }
 
 .home {
-  background-color: green;
+  background-color: rgba(9, 0, 255, 0.6);
   padding: 20px;
   height: 100%;
   width: 100%;
-  position: absolute;
 }
 
 .home-menu {
-  background-color: red;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -149,12 +147,13 @@ img {
 }
 
 .home-menu-link {
+  color: black;
   text-decoration: none;
   padding: 10px 20px;
 }
 
 .home-meio {
-  background-color: blue;
+  color: black;
   -webkit-box-flex: 12;
       -ms-flex-positive: 12;
           flex-grow: 12;
@@ -162,42 +161,14 @@ img {
   text-align: center;
 }
 
-@-webkit-keyframes pulsar {
-  0% {
-    background-position: center bottom;
-  }
-  50% {
-    background-position: center top;
-  }
-  100% {
-    background-position: center bottom;
-  }
+.home-meio-nome {
+  font-size: 28px;
+  margin-top: 50px;
 }
 
-@keyframes pulsar {
-  0% {
-    background-position: center bottom;
-  }
-  50% {
-    background-position: center top;
-  }
-  100% {
-    background-position: center bottom;
-  }
-}
-
-.btn-servicos {
-  background: url(../img/setinha.png);
-  background-repeat: no-repeat;
-  background-size: 50% auto;
-  height: 100px;
-  width: 200px;
-  position: absolute;
-  left: 50%;
-  margin-left: -100px;
-  bottom: 0;
-  -webkit-animation: pulsar 3s infinite;
-          animation: pulsar 3s infinite;
+.home-meio-frase {
+  font-size: 24px;
+  margin-top: 10px;
 }
 
 /* Variaveis */
@@ -220,7 +191,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +247,7 @@ img {
 .servicos {
   position: absolute;
   top: 100%;
-  background-color: red;
+  background-color: rgba(0, 94, 255, 0.6);
   height: 100%;
   width: 100%;
   padding: 20px;
@@ -314,7 +285,7 @@ img {
 }
 
 .servicos-plano:hover {
-  background-color: darkorange;
+  background-color: rgba(0, 94, 255, 0.7);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: white;
@@ -364,7 +335,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,8 +392,8 @@ img {
   padding: 20px;
   position: absolute;
   top: 200%;
-  background-color: purple;
-  color: white;
+  background-color: rgba(0, 120, 255, 0.6);
+  color: black;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -434,8 +405,8 @@ img {
 }
 
 .quemsomos-container {
-  width: 1000px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 
 .quemsomos-lista {
@@ -486,12 +457,13 @@ img {
 }
 
 .quemsomos-informacoes-titulo {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 30px;
 }
 
 .quemsomos-informacoes-texto {
+  color: black;
   padding: 20px;
   text-align: center;
 }
@@ -543,7 +515,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,6 +569,7 @@ img {
 }
 
 .contato {
+  background-color: rgba(0, 175, 255, 0.6);
   position: absolute;
   top: 400%;
   height: 100%;
@@ -774,7 +747,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,7 +803,7 @@ img {
 .trabalheconosco {
   position: absolute;
   top: 300%;
-  background-color: yellow;
+  background-color: rgba(0, 159, 255, 0.6);
   height: 100%;
   width: 100%;
   padding: 20px;
@@ -901,7 +874,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -960,7 +933,7 @@ html {
 }
 
 body {
-  background-color: red;
+  background: url(../img/pattern.png) repeat center;
   height: 100%;
   width: 100%;
   font-family: "Lato", sans-serif;
@@ -971,4 +944,82 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
+}
+
+@-webkit-keyframes pulsar {
+  0% {
+    background-position: center bottom;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    background-position: center bottom;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.btn-efeito {
+  background: url(../img/setinha.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  -webkit-animation: pulsar 3s infinite;
+          animation: pulsar 3s infinite;
+  opacity: 0.3;
+}
+
+.btn-servicos-ir {
+  bottom: 0;
+}
+
+.btn-home-voltar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 0;
+}
+
+.btn-quemsomos-ir {
+  bottom: 0;
+}
+
+.btn-servicos-voltar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 0;
+}
+
+.btn-trabalheconosco-ir {
+  bottom: 0;
+}
+
+.btn-quemsomos-voltar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 0;
+}
+
+.btn-contato-ir {
+  bottom: 0;
+}
+
+.btn-trabalheconosco-voltar {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: 0;
 }

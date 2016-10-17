@@ -1,11 +1,11 @@
 @import 'utilitarios';
 
 .quemsomos{
-    padding:20px; position:absolute; top:200%; background-color:purple; color:white; height:100%; width:100%; @extend %flexcoluna; text-align:center;
+    padding:20px; position:absolute; top:200%; background-color:rgba($cor3,.6); color:black; height:100%; width:100%; @extend %flexcoluna; text-align:center;
 
     &-titulo-principal{font-size:40px; text-transform:uppercase;}
 
-    &-container{width:1000px; height:500px; }
+    &-container{@extend %flexcoluna; width:100%; height:100%;}
     &-lista{@extend %flexlinha2; margin-top:40px; padding:20px; width:1000px;}
 
     &-item      {border-radius:50%; transition:all 1s; background-size:auto 100%; background-repeat:no-repeat; width:130px; height:130px;}
@@ -18,8 +18,8 @@
     &-caciano {background-image:url("../img/caciano.jpg");}
 
     &-informacoes{border:1px solid black; border-radius:10px; padding:40px 20px;}
-    &-informacoes-titulo{color:white; text-align:center; font-size:30px;}
-    &-informacoes-texto {padding:20px; text-align:center;}
+    &-informacoes-titulo{color:black; text-align:center; font-size:30px;}
+    &-informacoes-texto {color:black; padding:20px; text-align:center;}
 
     &-social{@extend %flexlinha; width:100%;}
     &-social-item{background:no-repeat; display:inline-block; height:50px; list-style:none; width:50px;}

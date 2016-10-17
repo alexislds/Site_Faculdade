@@ -1,5 +1,20 @@
 @import 'utilitarios';
 html{height:100%; width:100%;}
-body{background-color:red; height:100%; width:100%; font-family: $fontePadrao; position:relative;}
+body{background:url(../img/pattern.png) repeat center; height:100%; width:100%; font-family: $fontePadrao; position:relative;}
 
 .link{@include mascara;}
+
+@keyframes pulsar {
+    0% {background-position:center bottom;}
+    50% {background-position:center top;}
+    100% {background-position:center bottom;}
+}
+.btn-efeito{background:url(../img/setinha.png); background-repeat:no-repeat; background-size:50% auto; height:100px; width:200px; position:absolute; left:50%; margin-left:-100px; animation:pulsar 3s infinite; opacity:0.3;}
+.btn-servicos-ir{bottom:0;}
+.btn-home-voltar{transform:rotate(180deg); top:0;}
+.btn-quemsomos-ir{bottom:0;}
+.btn-servicos-voltar{transform:rotate(180deg); top:0;}
+.btn-trabalheconosco-ir{bottom:0;}
+.btn-quemsomos-voltar{transform:rotate(180deg); top:0;}
+.btn-contato-ir{bottom:0;}
+.btn-trabalheconosco-voltar{transform:rotate(180deg); top:0;}
