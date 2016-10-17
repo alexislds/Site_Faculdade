@@ -7,17 +7,63 @@ var $getContato = $getBody.querySelector('.contato');
 var $getBotoes = $getBody.querySelectorAll('.btn-efeito');
 var $getBotao = $getBody.querySelector('.btn-efeito');
 
-$getBotao.addEventListener('click', function(){
-  rolar('.btn-efeito', '.contato', 10000);
+$getBotoes[0].addEventListener('click', function(){
+  rolar('.servicos', 5);
+});
+$getBotoes[1].addEventListener('click', function(){
+  rolar('.home', 5);
+});
+$getBotoes[2].addEventListener('click', function(){
+  rolar('.quemsomos', 5);
+});
+$getBotoes[3].addEventListener('click', function(){
+  rolar('.servicos', 5);
+});
+$getBotoes[4].addEventListener('click', function(){
+  rolar('.contato', 5);
+});
+$getBotoes[5].addEventListener('click', function(){
+  rolar('.contato', 5);
+});
+$getBotoes[6].addEventListener('click', function(){
+  rolar('.contato', 5);
+});
+$getBotoes[7].addEventListener('click', function(){
+  rolar('.contato', 5);
 });
 
-function rolar(trigger, el, speed) {
+function rolar(el, speed) {
   var $getEl = document.querySelector(el);
   console.log($getEl);
-  var $getTrigger = document.querySelector(trigger);
-  console.log($getTrigger);
+  var bodyHeight = document.body.offsetHeight*4;
+  console.log(bodyHeight);
   var posicaoEl = $getEl.offsetTop;
   console.log(posicaoEl);
-  
-  window.scrollTo(0, posicaoEl);
+  var posicaoAtual = window.pageYOffset;
+  console.log(posicaoAtual);
+  var distancia = 1;
+
+  var rolar = setInterval(function(){
+    if (posicaoAtual >= bodyHeight) {
+      clearInterval(rolar);
+      console.log("parou");
+    }
+    else if (posicaoAtual < posicaoEl) {
+      var andar = posicaoAtual + distancia;
+      scrollTo(0, andar);
+      posicaoAtual = window.pageYOffset;
+      console.log(posicaoAtual);
+    }
+    else if (posicaoAtual > posicaoEl) {
+      andar = posicaoAtual - distancia;
+      scrollTo(0, andar);
+      posicaoAtual = window.pageYOffset;
+      console.log(posicaoAtual);
+    }
+    else if (posicaoAtual == posicaoEl) {
+      clearInterval(rolar);
+      console.log("parou");
+    }
+  }, speed);
+
 }
