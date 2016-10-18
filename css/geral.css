@@ -56,52 +56,52 @@ body {
   background: url(../img/setinha.png);
   background-repeat: no-repeat;
   background-size: 50% auto;
-  height: 100px;
-  width: 200px;
+  height: 70px;
+  width: 100px;
   position: absolute;
   left: 50%;
-  margin-left: -100px;
-  -webkit-animation: pulsar 3s infinite;
-          animation: pulsar 3s infinite;
+  margin-left: -50px;
+  -webkit-animation: pulsar 4s infinite;
+          animation: pulsar 4s infinite;
   opacity: 0.3;
 }
 
 .btn-servicos-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-home-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }
 
 .btn-quemsomos-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-servicos-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }
 
 .btn-trabalheconosco-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-quemsomos-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }
 
 .btn-contato-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-trabalheconosco-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }

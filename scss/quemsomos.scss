@@ -1,7 +1,7 @@
 @import 'utilitarios';
 
 .quemsomos{
-    padding:20px; position:absolute; top:200%; background-color:rgba($cor3,.6); color:black; height:100%; width:100%; @extend %flexcoluna; text-align:center;
+    padding:80px 20px; position:absolute; top:200%; background-color:rgba($cor3,.6); color:black; height:100%; width:100%; @extend %flexcoluna; text-align:center;
 
     &-titulo-principal{font-size:40px; text-transform:uppercase;}
 

@@ -128,7 +128,7 @@ img {
 
 .home {
   background-color: rgba(9, 0, 255, 0.6);
-  padding: 20px;
+  padding: 20px 20px 80px 20px;
   height: 100%;
   width: 100%;
 }
@@ -250,7 +250,7 @@ img {
   background-color: rgba(0, 94, 255, 0.6);
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 80px 20px;
 }
 
 .servicos-titulo-principal {
@@ -389,7 +389,7 @@ img {
 }
 
 .quemsomos {
-  padding: 20px;
+  padding: 80px 20px;
   position: absolute;
   top: 200%;
   background-color: rgba(0, 120, 255, 0.6);
@@ -573,7 +573,7 @@ img {
   position: absolute;
   top: 400%;
   height: 100%;
-  padding: 20px;
+  padding: 80px 20px;
   width: 100%;
 }
 
@@ -806,7 +806,7 @@ img {
   background-color: rgba(0, 159, 255, 0.6);
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 80px 20px;
   overflow: hidden;
 }
 
@@ -974,52 +974,52 @@ body {
   background: url(../img/setinha.png);
   background-repeat: no-repeat;
   background-size: 50% auto;
-  height: 100px;
-  width: 200px;
+  height: 70px;
+  width: 100px;
   position: absolute;
   left: 50%;
-  margin-left: -100px;
-  -webkit-animation: pulsar 3s infinite;
-          animation: pulsar 3s infinite;
+  margin-left: -50px;
+  -webkit-animation: pulsar 4s infinite;
+          animation: pulsar 4s infinite;
   opacity: 0.3;
 }
 
 .btn-servicos-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-home-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }
 
 .btn-quemsomos-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-servicos-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }
 
 .btn-trabalheconosco-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-quemsomos-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }
 
 .btn-contato-ir {
-  bottom: 0;
+  bottom: 10px;
 }
 
 .btn-trabalheconosco-voltar {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 0;
+  top: 10px;
 }
