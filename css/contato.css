@@ -2,7 +2,7 @@
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.contato, .contato-informacoes {
+.contato, .contato-sacola, .contato-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

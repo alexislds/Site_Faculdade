@@ -2,6 +2,8 @@
 
 .contato{
   @extend %flexlinha; background-color:rgba($cor5,.6); position:absolute; top:400%; height:100%; padding:80px 20px; width:100%;
+  
+  &-sacola{@extend %flexlinha;}
 
   &-informacoes{@extend %flexlinha; flex-wrap:wrap; height:100%; padding:20px; width:50%;}
   &-infos{

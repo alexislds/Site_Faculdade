@@ -1,7 +1,9 @@
 @import 'utilitarios';
 
 .home{
-  background-color:rgba($cor1,.6); @extend %flexcoluna; padding:20px 20px 80px 20px; height:100%; width:100%;
+  background-color:rgba($cor1,.6); padding:20px 20px 80px 20px; height:100%; width:100%; transition:all 2s;
+
+  &-sacola{@extend %flexcoluna;}
 
   &-menu{
     @extend %flexlinha; flex-grow:1; width:100%; text-align:center;

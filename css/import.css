@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -57,7 +58,7 @@ table {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-informacoes {
+.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +74,7 @@ table {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +105,7 @@ table {
           align-items: center;
 }
 
-.servicos {
+.servicos, .servicos-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,6 +132,8 @@ img {
   padding: 20px 20px 80px 20px;
   height: 100%;
   width: 100%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .home-menu {
@@ -175,7 +178,7 @@ img {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-informacoes {
+.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +194,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,7 +225,7 @@ img {
           align-items: center;
 }
 
-.servicos {
+.servicos, .servicos-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,6 +254,15 @@ img {
   height: 100%;
   width: 100%;
   padding: 80px 20px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.servicos-sacola {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .servicos-titulo-principal {
@@ -319,7 +331,7 @@ img {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-informacoes {
+.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +347,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +378,7 @@ img {
           align-items: center;
 }
 
-.servicos {
+.servicos, .servicos-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +511,7 @@ img {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-informacoes {
+.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,7 +527,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +558,7 @@ img {
           align-items: center;
 }
 
-.servicos {
+.servicos, .servicos-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,7 +743,7 @@ img {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-informacoes {
+.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,7 +759,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,7 +790,7 @@ img {
           align-items: center;
 }
 
-.servicos {
+.servicos, .servicos-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,12 +820,6 @@ img {
   width: 100%;
   padding: 80px 20px;
   overflow: hidden;
-}
-
-.trabalheconosco-container {
-  height: 100%;
-  width: 100%;
-  padding: 20px 20%;
 }
 
 .trabalheconosco-titulo-principal {
@@ -858,7 +864,7 @@ img {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-informacoes {
+.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,7 +880,7 @@ img {
           align-items: center;
 }
 
-.home, .home-meio, .quemsomos, .quemsomos-container, .contato-formulario-container, .trabalheconosco-container, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,7 +911,7 @@ img {
           align-items: center;
 }
 
-.servicos {
+.servicos, .servicos-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,6 +976,7 @@ body {
   }
 }
 
+/*----- Efeito Scroll -----*/
 .btn-efeito {
   background: url(../img/setinha.png);
   background-repeat: no-repeat;
@@ -1022,4 +1029,36 @@ body {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   top: 10px;
+}
+
+/*----- Efeito Transição -----*/
+.sacola {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.efeito-direita {
+  opacity: 0;
+  right: -100%;
+}
+
+.efeito-esquerda {
+  opacity: 0;
+  left: -100%;
+}
+
+.efeito-cima {
+  opacity: 0;
+  left: -100%;
+}
+
+.efeito-baixo {
+  opacity: 0;
+  bottom: -100%;
+}
+
+.remover-translate-left {
+  opacity: 1;
+  left: 0;
 }

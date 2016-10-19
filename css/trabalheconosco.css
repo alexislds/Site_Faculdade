@@ -2,7 +2,7 @@
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.trabalheconosco-container, .trabalheconosco-informacoes {
+.trabalheconosco-sacola, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,12 +33,6 @@ img {
   width: 100%;
   padding: 80px 20px;
   overflow: hidden;
-}
-
-.trabalheconosco-container {
-  height: 100%;
-  width: 100%;
-  padding: 20px 20%;
 }
 
 .trabalheconosco-titulo-principal {

@@ -2,7 +2,9 @@
 
 
 .servicos{
-    position:absolute; top:100%; background-color:rgba($cor2,.6); height:100%; width:100%; padding:80px 20px; @extend %flexcoluna2;
+    position:absolute; top:100%; background-color:rgba($cor2,.6); height:100%; width:100%; padding:80px 20px; @extend %flexcoluna2; transition:all 500ms;
+
+    &-sacola{@extend %flexcoluna2; position:absolute; left:0; transition:all 2s;}
 
     &-titulo-principal{font-size:40px; text-transform:uppercase;}
     &-titulo{font-size:30px;}
