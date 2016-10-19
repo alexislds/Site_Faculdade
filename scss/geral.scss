@@ -23,13 +23,9 @@ body{background:url(../img/pattern.png) repeat center; height:100%; width:100%; 
 
 /*----- Efeito Transição -----*/
 
-.sacola{height:100%; overflow:hidden; width:100%;}
+.sacola{height:100%; left:0; opacity:1; overflow:hidden; position:absolute; top:0; transition:all 2s;width:100%;}
 
-.efeito-direita  {opacity:0; right:-100%;}
+.efeito-direita  {opacity:0; left:100%;}
 .efeito-esquerda {opacity:0; left:-100%;}
-.efeito-cima     {opacity:0; left:-100%;}
-.efeito-baixo    {opacity:0; bottom:-100%;}
-
-
-
-.remover-translate-left{opacity:1; left:0;}
+.efeito-cima     {opacity:0; top:-100%;}
+.efeito-baixo    {opacity:0; top:100%;}

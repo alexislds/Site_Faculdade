@@ -253,16 +253,10 @@ img {
   background-color: rgba(0, 94, 255, 0.6);
   height: 100%;
   width: 100%;
+  overflow: hidden;
   padding: 80px 20px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
-}
-
-.servicos-sacola {
-  position: absolute;
-  left: 0;
-  -webkit-transition: all 2s;
-  transition: all 2s;
 }
 
 .servicos-titulo-principal {
@@ -1034,13 +1028,19 @@ body {
 /*----- Efeito Transição -----*/
 .sacola {
   height: 100%;
+  left: 0;
+  opacity: 1;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
   width: 100%;
 }
 
 .efeito-direita {
   opacity: 0;
-  right: -100%;
+  left: 100%;
 }
 
 .efeito-esquerda {
@@ -1050,15 +1050,10 @@ body {
 
 .efeito-cima {
   opacity: 0;
-  left: -100%;
+  top: -100%;
 }
 
 .efeito-baixo {
   opacity: 0;
-  bottom: -100%;
-}
-
-.remover-translate-left {
-  opacity: 1;
-  left: 0;
+  top: 100%;
 }

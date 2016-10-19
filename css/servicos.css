@@ -46,16 +46,10 @@ img {
   background-color: rgba(0, 94, 255, 0.6);
   height: 100%;
   width: 100%;
+  overflow: hidden;
   padding: 80px 20px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
-}
-
-.servicos-sacola {
-  position: absolute;
-  left: 0;
-  -webkit-transition: all 2s;
-  transition: all 2s;
 }
 
 .servicos-titulo-principal {
