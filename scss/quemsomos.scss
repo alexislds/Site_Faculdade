@@ -1,9 +1,9 @@
 @import 'utilitarios';
 
 .quemsomos{
-    padding:80px 20px; position:absolute; top:200%; background-color:rgba($cor3,.6); color:black; height:100%; width:100%; @extend %flexcoluna; text-align:center;
+    position:absolute; top:200%; background-color:rgba($cor3,.6); color:black; height:100%; width:100%; @extend %flexcoluna; text-align:center;
 
-    &-sacola{@extend %flexcoluna;}
+    &-sacola{@extend %flexcoluna; padding:80px 20px;}
 
     &-titulo-principal{font-size:40px; text-transform:uppercase;}
 
@@ -19,15 +19,9 @@
     &-igor    {background-image:url("../img/igor.jpg");}
     &-caciano {background-image:url("../img/caciano.jpg");}
 
-    &-informacoes{border:1px solid black; border-radius:10px; padding:40px 20px;}
+    &-informacoes{border:1px solid black; border-radius:10px; padding:40px 20px; max-width:1000px;}
     &-informacoes-titulo{color:black; text-align:center; font-size:30px;}
     &-informacoes-texto {color:black; padding:20px; text-align:center;}
-
-    &-social{@extend %flexlinha; width:100%;}
-    &-social-item{background:no-repeat; display:inline-block; height:50px; list-style:none; width:50px;}
-    &-link{@include mascara;}
-    &-facebook{background-image:url(../img/facebook.png); margin-right:20px;}
-    &-github{background-image:url(../img/github.png);}
 
 
 

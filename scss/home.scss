@@ -1,16 +1,17 @@
 @import 'utilitarios';
 
 .home{
-  background-color:rgba($cor1,.6); padding:20px 20px 80px 20px; height:100%; width:100%; transition:all 2s;
+  background-color:rgba($cor1,.6); height:100%; width:100%; transition:all 2s;
 
-  &-sacola{@extend %flexcoluna;}
+  &-sacola{@extend %flexcoluna; padding:20px 20px 80px 20px;}
 
   &-menu{
     @extend %flexlinha; flex-grow:1; width:100%; text-align:center;
 
     &-lista{}
     &-item{display:inline-block; list-style:none;}
-    &-link{color:black; text-decoration:none; padding:10px 20px;}
+    &-link{background:linear-gradient(to bottom, #222, #222) no-repeat center bottom / 0 1px; color:#222; text-decoration:none; padding:10px 20px; transition:background-size 300ms;}
+    &-link:hover{background-size:100% 1px;}
   }
 
   &-meio{

@@ -46,8 +46,11 @@ img {
   position: absolute;
   top: 400%;
   height: 100%;
-  padding: 80px 20px;
   width: 100%;
+}
+
+.contato-sacola {
+  padding: 80px 20px;
 }
 
 .contato-informacoes {

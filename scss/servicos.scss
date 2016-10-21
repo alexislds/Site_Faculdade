@@ -2,9 +2,9 @@
 
 
 .servicos{
-    position:absolute; top:100%; background-color:rgba($cor2,.6); height:100%; width:100%; overflow:hidden; padding:80px 20px; @extend %flexcoluna2; transition:all 500ms;
+    position:absolute; top:100%; background-color:rgba($cor2,.6); height:100%; width:100%; overflow:hidden; @extend %flexcoluna2; transition:all 500ms;
 
-    &-sacola{@extend %flexcoluna2;}
+    &-sacola{@extend %flexcoluna2; padding:80px 20px;}
 
     &-titulo-principal{font-size:40px; text-transform:uppercase;}
     &-titulo{font-size:30px;}
@@ -21,11 +21,11 @@
 
     &-basico                       {}
     &-basico-item                  {}
-    &-basico-item:nth-of-type(1n+4){background-image: url("../img/uncheck.png"); color: #dedede;}
+    &-basico-item:nth-of-type(1n+4){background-image: url("../img/uncheck.png"); color: rgba(#eee, .5); text-decoration:line-through;}
 
     &-premium                       {}
     &-basico-item                   {}
-    &-premium-item:nth-of-type(1n+6){background-image: url("../img/uncheck.png"); color: #dedede;}
+    &-premium-item:nth-of-type(1n+6){background-image: url("../img/uncheck.png"); color: rgba(#eee, .5); text-decoration:line-through;}
 
     &-vip{ }
 

@@ -2,7 +2,23 @@
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.trabalheconosco-sacola, .trabalheconosco-informacoes {
+.trabalheconosco-informacoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trabalheconosco-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,8 +47,13 @@ img {
   background-color: rgba(0, 159, 255, 0.6);
   height: 100%;
   width: 100%;
-  padding: 80px 20px;
   overflow: hidden;
+}
+
+.trabalheconosco-sacola {
+  height: 100%;
+  width: 100%;
+  padding: 80px 20px;
 }
 
 .trabalheconosco-titulo-principal {
@@ -46,29 +67,53 @@ img {
   width: 100%;
   height: 200px;
   margin-top: 27px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .trabalheconosco-informacoes-lampada {
-  background: url(../img/lampada.png) no-repeat right center/130px 130px;
-  padding-right: 130px;
+  background: url(../img/lampada.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
 }
 
 .trabalheconosco-informacoes-logo1 {
-  background: url(../img/logo1.png) no-repeat left center/130px 130px;
-  padding-left: 150px;
+  background: url(../img/logo1.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
+}
+
+.trabalheconosco-informacoes-logos {
+  background-size: auto 100%;
+  width: 130px;
+  height: 100%;
+}
+
+.trabalheconosco-informacoes-titulo {
+  text-align: center;
+}
+
+.trabalheconosco-informacoes-texto {
+  width: calc(100% - 130px);
 }
 
 .trabalheconosco-informacoes-clima {
-  background: url(../img/clima.png) no-repeat left center/130px 130px;
-  padding-left: 130px;
+  background: url(../img/clima.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
 }
 
 .trabalheconosco-informacoes-engrenagem {
-  background: url(../img/engrenagem.png) no-repeat right center/130px 130px;
-  padding-right: 130px;
+  background: url(../img/engrenagem.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
 }
 
 .trabalheconosco-informacoes-titulo {
   font-size: 29px;
-  margin-bottom: 25px;
+  width: 100%;
 }

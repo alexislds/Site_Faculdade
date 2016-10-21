@@ -58,7 +58,7 @@ table {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
+.home-menu, .servicos-container-plano, .contato, .contato-sacola, .contato-informacoes, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +74,7 @@ table {
           align-items: center;
 }
 
-.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,11 +129,14 @@ img {
 
 .home {
   background-color: rgba(9, 0, 255, 0.6);
-  padding: 20px 20px 80px 20px;
   height: 100%;
   width: 100%;
   -webkit-transition: all 2s;
   transition: all 2s;
+}
+
+.home-sacola {
+  padding: 20px 20px 80px 20px;
 }
 
 .home-menu {
@@ -150,9 +153,17 @@ img {
 }
 
 .home-menu-link {
-  color: black;
+  background: -webkit-linear-gradient(top, #222, #222) no-repeat center bottom/0 1px;
+  background: linear-gradient(to bottom, #222, #222) no-repeat center bottom/0 1px;
+  color: #222;
   text-decoration: none;
   padding: 10px 20px;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.home-menu-link:hover {
+  background-size: 100% 1px;
 }
 
 .home-meio {
@@ -178,7 +189,7 @@ img {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
+.home-menu, .servicos-container-plano, .contato, .contato-sacola, .contato-informacoes, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +205,7 @@ img {
           align-items: center;
 }
 
-.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,9 +265,12 @@ img {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  padding: 80px 20px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
+}
+
+.servicos-sacola {
+  padding: 80px 20px;
 }
 
 .servicos-titulo-principal {
@@ -313,19 +327,21 @@ img {
 
 .servicos-basico-item:nth-of-type(1n+4) {
   background-image: url("../img/uncheck.png");
-  color: #dedede;
+  color: rgba(238, 238, 238, 0.5);
+  text-decoration: line-through;
 }
 
 .servicos-premium-item:nth-of-type(1n+6) {
   background-image: url("../img/uncheck.png");
-  color: #dedede;
+  color: rgba(238, 238, 238, 0.5);
+  text-decoration: line-through;
 }
 
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
+.home-menu, .servicos-container-plano, .contato, .contato-sacola, .contato-informacoes, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +357,7 @@ img {
           align-items: center;
 }
 
-.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,7 +411,6 @@ img {
 }
 
 .quemsomos {
-  padding: 80px 20px;
   position: absolute;
   top: 200%;
   background-color: rgba(0, 120, 255, 0.6);
@@ -403,6 +418,10 @@ img {
   height: 100%;
   width: 100%;
   text-align: center;
+}
+
+.quemsomos-sacola {
+  padding: 80px 20px;
 }
 
 .quemsomos-titulo-principal {
@@ -460,6 +479,7 @@ img {
   border: 1px solid black;
   border-radius: 10px;
   padding: 40px 20px;
+  max-width: 1000px;
 }
 
 .quemsomos-informacoes-titulo {
@@ -474,38 +494,11 @@ img {
   text-align: center;
 }
 
-.quemsomos-social {
-  width: 100%;
-}
-
-.quemsomos-social-item {
-  background: no-repeat;
-  display: inline-block;
-  height: 50px;
-  list-style: none;
-  width: 50px;
-}
-
-.quemsomos-link {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
-.quemsomos-facebook {
-  background-image: url(../img/facebook.png);
-  margin-right: 20px;
-}
-
-.quemsomos-github {
-  background-image: url(../img/github.png);
-}
-
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
+.home-menu, .servicos-container-plano, .contato, .contato-sacola, .contato-informacoes, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,7 +514,7 @@ img {
           align-items: center;
 }
 
-.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,8 +572,11 @@ img {
   position: absolute;
   top: 400%;
   height: 100%;
-  padding: 80px 20px;
   width: 100%;
+}
+
+.contato-sacola {
+  padding: 80px 20px;
 }
 
 .contato-informacoes {
@@ -737,7 +733,7 @@ img {
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
+.home-menu, .servicos-container-plano, .contato, .contato-sacola, .contato-informacoes, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,7 +749,7 @@ img {
           align-items: center;
 }
 
-.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,8 +808,13 @@ img {
   background-color: rgba(0, 159, 255, 0.6);
   height: 100%;
   width: 100%;
-  padding: 80px 20px;
   overflow: hidden;
+}
+
+.trabalheconosco-sacola {
+  height: 100%;
+  width: 100%;
+  padding: 80px 20px;
 }
 
 .trabalheconosco-titulo-principal {
@@ -827,38 +828,62 @@ img {
   width: 100%;
   height: 200px;
   margin-top: 27px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .trabalheconosco-informacoes-lampada {
-  background: url(../img/lampada.png) no-repeat right center/130px 130px;
-  padding-right: 130px;
+  background: url(../img/lampada.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
 }
 
 .trabalheconosco-informacoes-logo1 {
-  background: url(../img/logo1.png) no-repeat left center/130px 130px;
-  padding-left: 150px;
+  background: url(../img/logo1.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
+}
+
+.trabalheconosco-informacoes-logos {
+  background-size: auto 100%;
+  width: 130px;
+  height: 100%;
+}
+
+.trabalheconosco-informacoes-titulo {
+  text-align: center;
+}
+
+.trabalheconosco-informacoes-texto {
+  width: calc(100% - 130px);
 }
 
 .trabalheconosco-informacoes-clima {
-  background: url(../img/clima.png) no-repeat left center/130px 130px;
-  padding-left: 130px;
+  background: url(../img/clima.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
 }
 
 .trabalheconosco-informacoes-engrenagem {
-  background: url(../img/engrenagem.png) no-repeat right center/130px 130px;
-  padding-right: 130px;
+  background: url(../img/engrenagem.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 100%;
 }
 
 .trabalheconosco-informacoes-titulo {
   font-size: 29px;
-  margin-bottom: 25px;
+  width: 100%;
 }
 
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
 /* Placeholder */
-.home-menu, .servicos-container-plano, .quemsomos-social, .contato, .contato-sacola, .contato-informacoes {
+.home-menu, .servicos-container-plano, .contato, .contato-sacola, .contato-informacoes, .trabalheconosco-informacoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,7 +899,7 @@ img {
           align-items: center;
 }
 
-.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola, .trabalheconosco-informacoes {
+.home-sacola, .home-meio, .quemsomos, .quemsomos-sacola, .quemsomos-container, .contato-formulario-container, .trabalheconosco-sacola {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -43,11 +43,14 @@ img {
 
 .home {
   background-color: rgba(9, 0, 255, 0.6);
-  padding: 20px 20px 80px 20px;
   height: 100%;
   width: 100%;
   -webkit-transition: all 2s;
   transition: all 2s;
+}
+
+.home-sacola {
+  padding: 20px 20px 80px 20px;
 }
 
 .home-menu {
@@ -64,9 +67,17 @@ img {
 }
 
 .home-menu-link {
-  color: black;
+  background: -webkit-linear-gradient(top, #222, #222) no-repeat center bottom/0 1px;
+  background: linear-gradient(to bottom, #222, #222) no-repeat center bottom/0 1px;
+  color: #222;
   text-decoration: none;
   padding: 10px 20px;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+}
+
+.home-menu-link:hover {
+  background-size: 100% 1px;
 }
 
 .home-meio {
